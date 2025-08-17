@@ -1,8 +1,9 @@
-# Open the router log file
-with open("router_logs.txt", "r") as f:
-    # Read the log file and filter for error lines
-    for line in f:
-        if "ERROR" in line:
-           # Save the error line to a file
-           with open("error_logs.txt", "a") as error_file:
-                error_file.write(line)
+def filter_logs(input_file, output_file, keywords):
+    """Filter logs containing specific keywords and save to output_file."""
+    with open(input_file, "r") as f, open(output_file, "w") as out:
+        for line in f:
+            if any(keyword in line for keyword in keywords):
+                out.write(line)
+
+filter_logs("router_logs.txt", "filtered_logs.txt", ["ERROR", "DOWN"])
+# This code filters logs from "router_logs.txt" and saves lines containing "ERROR" or "DOWN" to "filtered_logs.txt".
