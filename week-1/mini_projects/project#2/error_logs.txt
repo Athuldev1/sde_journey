@@ -1,0 +1,5 @@
+2025-08-17 10:00:05 [ERROR] %OSPF-5-ADJCHG: Process 100, Nbr 192.168.1.5 on GigabitEthernet0/0 from LOADING to FULL, Loading Done
+2025-08-17 10:00:20 [ERROR] %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan1, changed state to down
+2025-08-17 10:00:40 [ERROR] %SYS-2-MALLOCFAIL: Memory allocation failed for 1234 bytes.
+2025-08-17 10:01:00 [ERROR] %LINK-3-UPDOWN: Interface GigabitEthernet0/0, changed state to down
+2025-08-17 10:01:15 [ERROR] BGP: Neighbor 10.0.0.2 (remote-as 65001) went down.
