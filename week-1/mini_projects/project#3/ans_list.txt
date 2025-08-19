@@ -1,0 +1,5 @@
+firewall
+router
+switch
+
+Total Count of unique devices: 3
